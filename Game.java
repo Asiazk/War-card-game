@@ -40,7 +40,7 @@ public class Game {
 		 * in the deck, the game ends with a tie.
 		 * If both players stay with empty decks, the game ends with a tie.
 		 * In every turn, the message pane shows how many cards are
-		 * currently in each player's deck in ().
+		 * currently in each player's deck in "()".
 		 */
 		
 		// A turn begins only if both players have cards in their deck
@@ -60,8 +60,7 @@ public class Game {
 							 + " is the winner!!! thank you for playing :)");
 				
 				if (player2.remainingCards() == player1.remainingCards())
-					JOptionPane.showMessageDialog(null, "It's a tie!" +
-														"\n" + "Good game :)");
+					JOptionPane.showMessageDialog(null, "It's a tie!" + "\n" + "Good game :)");
 				
 				// An indicator that the game ended within 100 turns
 				System.out.println(turns);
