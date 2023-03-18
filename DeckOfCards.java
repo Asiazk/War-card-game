@@ -125,16 +125,14 @@ public class DeckOfCards {
 		
 		// If both players are left with an empty deck - the game ends with a tie
 		if (player1 == null && player2 == null) {
-			JOptionPane.showMessageDialog(null, "It's a tie!" +
-												"\n" + "Good game :)");
+			JOptionPane.showMessageDialog(null, "It's a tie!" + "\n" + "Good game :)");
 			return 0;
 		}
 	
 		// If both decks left with 3 or less cards, the game ends with a tie
 		if (player1.remainingCards() <= MINIMAL_WAR_CARDS &&
 			player2.remainingCards() <= MINIMAL_WAR_CARDS) {
-			JOptionPane.showMessageDialog(null, "It's a tie!" +
-										"\n" + "Good game :)");
+			JOptionPane.showMessageDialog(null, "It's a tie!" + "\n" + "Good game :)");
 			return 0;
 		}
 		
@@ -153,8 +151,7 @@ public class DeckOfCards {
 		// If both decks are empty, i.e. drawn cards are null, the game ends
 		// with a tie
 		if (Card.getValue(curCard1) == 0) {
-			JOptionPane.showMessageDialog(null, "It's a tie!" +
-												"\n" + "Good game :)");
+			JOptionPane.showMessageDialog(null, "It's a tie!" + "\n" + "Good game :)");
 			 return 0;
 		}
 		
